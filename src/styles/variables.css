@@ -1,0 +1,143 @@
+/* ==========================================================
+   CentralApp Design System Tokens
+   Harmonized with central-app & modern cyber-fintech references
+   ========================================================== */
+
+:root {
+  /* Fonts */
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Base Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 450ms;
+
+  /* Container width */
+  --container-max: 1240px;
+  --header-height: 74px;
+}
+
+/* ──────────────────────────────────────────
+   DARK THEME (Default Technological cyber feel)
+   Deep dark brown & roasted cocoa + vibrant gold
+   ────────────────────────────────────────── */
+[data-theme="dark"],
+:root:not([data-theme="light"]) {
+  /* Brand Accents */
+  --brand-gold: #F6C55F;
+  --brand-gold-glow: rgba(246, 197, 95, 0.35);
+  --brand-amber: #E8A83A;
+  --brand-amber-deep: #C08218;
+  --primary: #F6C55F;
+  --primary-hover: #FBD98A;
+  --primary-glow: 0 0 24px rgba(246, 197, 95, 0.28);
+  --accent-cyan: #38BDF8;
+
+  /* Surfaces & Backgrounds */
+  --bg-root: #140C07;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #29180E 0%, #140C07 70%);
+  --bg-elevated: #22140C;
+  --bg-card: rgba(36, 21, 13, 0.72);
+  --bg-card-hover: rgba(45, 27, 17, 0.88);
+  --bg-glass: rgba(26, 15, 9, 0.82);
+  --bg-glass-strong: rgba(20, 12, 7, 0.92);
+
+  /* Typography */
+  --text-primary: #FDFBF7;
+  --text-secondary: #D4C3B2;
+  --text-muted: #9C8573;
+  --text-inverse: #1C110B;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(246, 197, 95, 0.08);
+  --border-card: rgba(246, 197, 95, 0.16);
+  --border-highlight: rgba(246, 197, 95, 0.38);
+  --border-divider: rgba(255, 255, 255, 0.07);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.65);
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(246, 197, 95, 0.1);
+  --shadow-featured: 0 20px 50px -15px rgba(246, 197, 95, 0.22), 0 0 0 1px rgba(246, 197, 95, 0.45);
+
+  /* High-Tech Grid & Dot overlay */
+  --grid-pattern: radial-gradient(rgba(246, 197, 95, 0.12) 1px, transparent 1px);
+  --grid-size: 32px 32px;
+
+  /* Status */
+  --success: #4ADE80;
+  --success-bg: rgba(74, 222, 128, 0.12);
+  --warning: #FBBF24;
+  --warning-bg: rgba(251, 191, 36, 0.12);
+  --info: #60A5FA;
+  --info-bg: rgba(96, 165, 250, 0.12);
+}
+
+/* ──────────────────────────────────────────
+   LIGHT THEME (Warm artisan cream & roasted coffee)
+   Friendly, clear, high-contrast & premium
+   ────────────────────────────────────────── */
+[data-theme="light"] {
+  /* Brand Accents */
+  --brand-gold: #D4982A;
+  --brand-gold-glow: rgba(212, 152, 42, 0.25);
+  --brand-amber: #E8A83A;
+  --brand-amber-deep: #A76B14;
+  --primary: #D4982A;
+  --primary-hover: #BF821B;
+  --primary-glow: 0 0 20px rgba(212, 152, 42, 0.25);
+  --accent-cyan: #0284C7;
+
+  /* Surfaces & Backgrounds */
+  --bg-root: #F9F5EC;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #FFFFFF 0%, #F5EFE0 70%);
+  --bg-elevated: #FFFFFF;
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-card-hover: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-glass-strong: rgba(249, 245, 236, 0.95);
+
+  /* Typography */
+  --text-primary: #2C180F;
+  --text-secondary: #634735;
+  --text-muted: #8E7462;
+  --text-inverse: #FFFFFF;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(44, 24, 15, 0.08);
+  --border-card: rgba(212, 152, 42, 0.22);
+  --border-highlight: rgba(212, 152, 42, 0.45);
+  --border-divider: rgba(44, 24, 15, 0.09);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 6px rgba(44, 24, 15, 0.05);
+  --shadow-md: 0 8px 20px rgba(44, 24, 15, 0.08);
+  --shadow-lg: 0 16px 36px rgba(44, 24, 15, 0.12);
+  --shadow-card: 0 10px 30px -10px rgba(44, 24, 15, 0.08), 0 0 0 1px rgba(212, 152, 42, 0.15);
+  --shadow-featured: 0 20px 45px -15px rgba(212, 152, 42, 0.25), 0 0 0 2px rgba(212, 152, 42, 0.5);
+
+  /* High-Tech Grid & Dot overlay */
+  --grid-pattern: radial-gradient(rgba(212, 152, 42, 0.1) 1px, transparent 1px);
+  --grid-size: 32px 32px;
+
+  /* Status */
+  --success: #15803D;
+  --success-bg: rgba(21, 128, 61, 0.10);
+  --warning: #B45309;
+  --warning-bg: rgba(180, 83, 9, 0.10);
+  --info: #1D4ED8;
+  --info-bg: rgba(29, 78, 216, 0.10);
+}

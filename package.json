@@ -1,0 +1,15 @@
+{
+  "name": "central-landing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Landing page de alta conversión para CentralApp - Sistema Operativo Gastronómico con Inteligencia Artificial",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 56" fill="none">
+  <!-- Minimalist 1B Logo Container (Dark Mode: Monochrome Gold #E2AC4E) -->
+  <g transform="translate(2, 2)">
+    <rect width="52" height="52" rx="13" fill="#181310" />
+    <rect x="1" y="1" width="50" height="50" rx="12" stroke="#2C251D" stroke-width="1.2" />
+
+    <g transform="scale(0.52)">
+      <!-- Outer 'C' Arc -->
+      <path
+        d="M 49 20 A 32 32 0 1 0 74.8 70.9"
+        stroke="#E2AC4E"
+        stroke-width="8.4"
+        stroke-linecap="round"
+      />
+      <!-- Left Leg + Crossbar of 'A' -->
+      <path
+        d="M 61 21.5 L 47 50.5 M 51 42.5 H 73"
+        stroke="#E2AC4E"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <!-- Right Leg of 'A' with Ticket Notch -->
+      <path
+        d="M 61.4 31.8 A 9.5 9.5 0 0 0 68.6 28.4 L 71.55 34.75 A 4.1 4.1 0 0 0 74.93 42.0 L 77.6 47.7 A 9.5 9.5 0 0 0 70.4 51.1 Z"
+        fill="#E2AC4E"
+      />
+      <!-- 3 Vertices AI Nodes -->
+      <circle cx="61" cy="21.5" r="6.8" fill="#E2AC4E" />
+      <circle cx="47" cy="50.5" r="8.6" fill="#E2AC4E" />
+      <circle cx="78" cy="58" r="6.8" fill="#E2AC4E" />
+    </g>
+  </g>
+
+  <!-- Brand Typography (Dark Mode: Two-Tone Central + App) -->
+  <text x="66" y="36" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="800" font-size="25" letter-spacing="-0.6" fill="#FDFBF7">
+    Central<tspan fill="#E2AC4E">App</tspan>
+  </text>
+</svg>

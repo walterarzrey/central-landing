@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" fill="none">
+  <defs>
+    <linearGradient id="bgMay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140C07"/>
+      <stop offset="100%" stop-color="#22140C"/>
+    </linearGradient>
+    <linearGradient id="cardFeaturedGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2A180E"/>
+      <stop offset="100%" stop-color="#190E08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base Window -->
+  <rect width="800" height="500" rx="20" fill="url(#bgMay)" stroke="#F6C55F" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- Top System Bar -->
+  <rect width="800" height="50" rx="20" fill="#1C110B"/>
+  <circle cx="28" cy="25" r="6" fill="#EF4444"/>
+  <circle cx="48" cy="25" r="6" fill="#F59E0B"/>
+  <circle cx="68" cy="25" r="6" fill="#10B981"/>
+  <text x="96" y="29" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="12">centralapp.pe/listas-de-precios · Tarifas Dinámicas por Canal y Cliente</text>
+
+  <!-- Title & Filter Header -->
+  <g transform="translate(32, 74)">
+    <text x="0" y="22" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">Listas de Precios Dinámicas para un mismo Producto</text>
+    <text x="0" y="44" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="12">Elige la lista de precios al vender: protege tu ganancia ante comisiones de apps de delivery, clientes VIP o mayoristas.</text>
+  </g>
+
+  <!-- Comparison Cards Grid (4 Dynamic Price Lists) -->
+  <g transform="translate(32, 142)">
+    <!-- List 1: Precio en Local / Mostrador -->
+    <g transform="translate(0, 0)">
+      <rect width="172" height="310" rx="12" fill="#1F120A" stroke="#ffffff" stroke-opacity="0.1"/>
+      <rect x="16" y="18" width="96" height="26" rx="6" fill="#2A1910"/>
+      <text x="64" y="35" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">LISTA BASE</text>
+      
+      <text x="16" y="70" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700">Precio en Local</text>
+      <text x="16" y="90" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="11">Atención en mostrador</text>
+
+      <text x="16" y="136" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800">S/ 18.00</text>
+      <text x="16" y="156" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Sin comisión · Margen: 50%</text>
+
+      <line x1="16" y1="176" x2="156" y2="176" stroke="#ffffff" stroke-opacity="0.08"/>
+      <text x="16" y="204" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Precio Estándar</text>
+      <text x="16" y="232" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Cobro Yape / Plin</text>
+      <text x="16" y="260" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Boleta al Instante</text>
+    </g>
+
+    <!-- List 2: Apps de Delivery (Destacada) -->
+    <g transform="translate(188, 0)">
+      <rect width="172" height="310" rx="12" fill="url(#cardFeaturedGrad)" stroke="#F6C55F" stroke-width="2"/>
+      <rect x="16" y="18" width="132" height="26" rx="6" fill="#F6C55F"/>
+      <text x="82" y="35" fill="#140C07" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" text-anchor="middle">★ APPS DELIVERY</text>
+      
+      <text x="16" y="70" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700">Rappi / PedidosYa</text>
+      <text x="16" y="90" fill="#F6C55F" font-family="system-ui, -apple-system, sans-serif" font-size="11">Compensa comisión app</text>
+
+      <text x="16" y="136" fill="#F6C55F" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800">S/ 23.50</text>
+      <text x="16" y="156" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Cubre comisión · No pierdes</text>
+
+      <line x1="16" y1="176" x2="156" y2="176" stroke="#F6C55F" stroke-opacity="0.25"/>
+      <text x="16" y="204" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Cubre +25% Comisión</text>
+      <text x="16" y="232" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Cuadre por Aplicativo</text>
+      <text x="16" y="260" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Protege tu Ganancia</text>
+    </g>
+
+    <!-- List 3: Clientes Especiales / Frecuentes -->
+    <g transform="translate(376, 0)">
+      <rect width="172" height="310" rx="12" fill="#1F120A" stroke="#ffffff" stroke-opacity="0.1"/>
+      <rect x="16" y="18" width="114" height="26" rx="6" fill="#2A1910"/>
+      <text x="73" y="35" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">CLIENTE VIP</text>
+      
+      <text x="16" y="70" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700">Tarifa Clientes</text>
+      <text x="16" y="90" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="11">Clientes registrados</text>
+
+      <text x="16" y="136" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800">S/ 16.50</text>
+      <text x="16" y="156" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Precio especial fidelidad</text>
+
+      <line x1="16" y1="176" x2="156" y2="176" stroke="#ffffff" stroke-opacity="0.08"/>
+      <text x="16" y="204" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Se aplica al elegir cliente</text>
+      <text x="16" y="232" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Historial de Compras</text>
+      <text x="16" y="260" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Boleta o Factura</text>
+    </g>
+
+    <!-- List 4: Lista Mayorista / Corporativo -->
+    <g transform="translate(564, 0)">
+      <rect width="172" height="310" rx="12" fill="#1F120A" stroke="#ffffff" stroke-opacity="0.1"/>
+      <rect x="16" y="18" width="114" height="26" rx="6" fill="#2A1910"/>
+      <text x="73" y="35" fill="#4ADE80" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">MAYORISTA</text>
+      
+      <text x="16" y="70" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700">Lista por Mayor</text>
+      <text x="16" y="90" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="11">Distribuidores y empresas</text>
+
+      <text x="16" y="136" fill="#4ADE80" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800">S/ 14.80</text>
+      <text x="16" y="156" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Tarifa corporativa / volumen</text>
+
+      <line x1="16" y1="176" x2="156" y2="176" stroke="#ffffff" stroke-opacity="0.08"/>
+      <text x="16" y="204" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Factura RUC SUNAT</text>
+      <text x="16" y="232" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Pedidos por Volumen</text>
+      <text x="16" y="260" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">✓ Tarifa Preferencial</text>
+    </g>
+  </g>
+</svg>

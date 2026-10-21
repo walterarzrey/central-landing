@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" fill="none">
+  <defs>
+    <linearGradient id="bgCompra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140C07"/>
+      <stop offset="100%" stop-color="#24140C"/>
+    </linearGradient>
+    <linearGradient id="scanBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#38BDF8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="goldCompra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6C55F"/>
+      <stop offset="100%" stop-color="#E8A83A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base Window -->
+  <rect width="800" height="500" rx="20" fill="url(#bgCompra)" stroke="#F6C55F" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- Top System Bar -->
+  <rect width="800" height="50" rx="20" fill="#1C110B"/>
+  <circle cx="28" cy="25" r="6" fill="#EF4444"/>
+  <circle cx="48" cy="25" r="6" fill="#F59E0B"/>
+  <circle cx="68" cy="25" r="6" fill="#10B981"/>
+  <text x="96" y="29" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="12">centralapp.pe/compras · Lectura Automática de Compras con IA</text>
+
+  <!-- Left: Physical Supplier Document Being Read -->
+  <g transform="translate(32, 72)">
+    <!-- Step 1 Badge -->
+    <rect width="316" height="32" rx="8" fill="#2A1910" stroke="#F6C55F" stroke-opacity="0.3"/>
+    <text x="158" y="20" fill="#F6C55F" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASO 1: SUBES FOTO O PDF DE TU FACTURA</text>
+
+    <!-- Document Card Mockup -->
+    <g transform="translate(0, 44)">
+      <rect width="316" height="352" rx="10" fill="#FFFFFF"/>
+      
+      <!-- Document Header -->
+      <rect x="22" y="22" width="76" height="14" rx="2" fill="#301811"/>
+      <rect x="22" y="42" width="120" height="8" rx="2" fill="#9C8573"/>
+      <rect x="210" y="20" width="84" height="32" rx="4" fill="#F4F4F5" stroke="#E4E4E7"/>
+      <text x="252" y="40" fill="#18181B" font-family="monospace" font-size="9.5" font-weight="700" text-anchor="middle">FACTURA F003</text>
+
+      <!-- Document Lines -->
+      <line x1="22" y1="68" x2="294" y2="68" stroke="#E4E4E7" stroke-width="1.5"/>
+      <rect x="22" y="84" width="170" height="10" rx="2" fill="#D4D4D8"/>
+      <rect x="22" y="108" width="135" height="10" rx="2" fill="#D4D4D8"/>
+      <rect x="22" y="132" width="180" height="10" rx="2" fill="#D4D4D8"/>
+      <rect x="22" y="156" width="150" height="10" rx="2" fill="#D4D4D8"/>
+
+      <!-- Scanning Laser Beam -->
+      <rect x="0" y="110" width="316" height="62" fill="url(#scanBeam)"/>
+      <line x1="0" y1="172" x2="316" y2="172" stroke="#38BDF8" stroke-width="2.5"/>
+
+      <!-- AI Detection Boxes -->
+      <rect x="18" y="80" width="182" height="18" rx="3" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <rect x="234" y="80" width="60" height="18" rx="3" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+      <rect x="18" y="128" width="188" height="18" rx="3" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <rect x="234" y="128" width="60" height="18" rx="3" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+      <!-- Scan Status Badge -->
+      <rect x="20" y="298" width="276" height="36" rx="8" fill="#1C110B"/>
+      <circle cx="38" cy="316" r="5" fill="#38BDF8"/>
+      <text x="52" y="320" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">La IA lee productos y precios por ti...</text>
+    </g>
+  </g>
+
+  <!-- Right: Extracted Data & Instant Stock Update -->
+  <g transform="translate(372, 72)">
+    <!-- Header Process -->
+    <rect width="396" height="64" rx="10" fill="#1F120A" stroke="#F6C55F" stroke-opacity="0.25"/>
+    <text x="18" y="26" fill="#F6C55F" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="800">PASO 2: COMPRA LISTA PARA GUARDAR</text>
+    <text x="18" y="46" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11">Proveedor detectado: ALICORP S.A. · RUC 20100055237</text>
+
+    <!-- Extracted Items Table (Well spaced columns) -->
+    <g transform="translate(0, 78)">
+      <rect width="396" height="244" rx="10" fill="#1C110B" stroke="#ffffff" stroke-opacity="0.1"/>
+      
+      <!-- Table Header -->
+      <text x="16" y="26" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">PRODUCTO DETECTADO</text>
+      <text x="195" y="26" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">CANT.</text>
+      <text x="262" y="26" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">COSTO</text>
+      <text x="380" y="26" fill="#9C8573" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="end">SUBTOTAL</text>
+      <line x1="16" y1="36" x2="380" y2="36" stroke="#ffffff" stroke-opacity="0.08"/>
+
+      <!-- Row 1 -->
+      <text x="16" y="64" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600">Harina Especial Extra</text>
+      <text x="195" y="64" fill="#38BDF8" font-family="monospace" font-size="11.5" font-weight="700">+50 un</text>
+      <text x="262" y="64" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">S/ 4.20</text>
+      <text x="380" y="64" fill="#F6C55F" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="end">S/ 210.00</text>
+
+      <!-- Row 2 -->
+      <text x="16" y="106" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600">Aceite Vegetal 1L</text>
+      <text x="195" y="106" fill="#38BDF8" font-family="monospace" font-size="11.5" font-weight="700">+24 un</text>
+      <text x="262" y="106" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">S/ 6.80</text>
+      <text x="380" y="106" fill="#F6C55F" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="end">S/ 163.20</text>
+
+      <!-- Row 3 -->
+      <text x="16" y="148" fill="#FDFBF7" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600">Azúcar Rubia Saco 50kg</text>
+      <text x="195" y="148" fill="#38BDF8" font-family="monospace" font-size="11.5" font-weight="700">+4 sacos</text>
+      <text x="262" y="148" fill="#D4C3B2" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">S/ 138.00</text>
+      <text x="380" y="148" fill="#F6C55F" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="end">S/ 552.00</text>
+
+      <!-- Stock Confirmation Badge (Fits comfortably inside 364px) -->
+      <g transform="translate(16, 182)">
+        <rect width="364" height="42" rx="8" fill="rgba(74, 222, 128, 0.12)" stroke="#4ADE80" stroke-width="1"/>
+        <text x="182" y="25" fill="#4ADE80" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">✓ STOCK ACTUALIZADO SIN ESCRIBIR NADA A MANO</text>
+      </g>
+    </g>
+
+    <!-- Bottom Action Button -->
+    <g transform="translate(0, 342)">
+      <rect width="396" height="48" rx="8" fill="url(#goldCompra)"/>
+      <text x="198" y="29" fill="#140C07" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">CONFIRMAR Y SUMAR AL INVENTARIO</text>
+    </g>
+  </g>
+</svg>
