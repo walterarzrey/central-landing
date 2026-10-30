@@ -26,6 +26,15 @@
   }
 }
 
+@keyframes floatHeroMobile {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
 @keyframes shimmerEffect {
   0% {
     background-position: -200% 0;
@@ -37,6 +46,12 @@
 
 .float-animation {
   animation: floatHero 6s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .float-animation {
+    animation: floatHeroMobile 6s ease-in-out infinite;
+  }
 }
 
 .shimmer-badge {

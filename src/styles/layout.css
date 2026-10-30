@@ -8,6 +8,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -358,6 +361,12 @@
   color: var(--text-muted);
 }
 
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 /* ──────────────────────────────────────────
    Responsive Breakpoints
    ────────────────────────────────────────── */
@@ -394,5 +403,67 @@
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding-top: clamp(44px, 8vw, 76px);
+    padding-bottom: clamp(44px, 8vw, 76px);
+  }
+
+  .header-actions .btn {
+    display: none;
+  }
+
+  .header-inner {
+    gap: 10px;
+  }
+
+  .brand-link {
+    font-size: 1.15rem;
+    gap: 8px;
+  }
+
+  .brand-logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero-trust-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .trust-number {
+    font-size: 1.35rem;
   }
 }

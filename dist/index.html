@@ -95,8 +95,8 @@
     ]
   }
   </script>
-  <script type="module" crossorigin src="./assets/index-BWzsin9A.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DU_C_5Ye.css">
+  <script type="module" crossorigin src="./assets/index-prsHfQ5f.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C4pdYFb6.css">
 </head>
 
 <body>
@@ -264,7 +264,7 @@
             </p>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+          <div class="features-grid-4col">
             <div class="glass-card">
               <div class="bento-icon-wrapper">
                 <span class="material-symbols-rounded">receipt_long</span>
@@ -332,7 +332,7 @@
           </div>
 
           <!-- Explicación Humana en 3 Pasos de Cómo Funciona el Registro de Compras con IA -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 48px;">
+          <div class="steps-grid-3col">
             <div class="glass-card" style="border-color: var(--border-highlight);">
               <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
                 <span style="width: 36px; height: 36px; border-radius: 50%; background: var(--primary); color: #140C07; font-weight: 800; display: flex; align-items: center; justify-content: center; font-family: var(--font-display);">1</span>
@@ -365,7 +365,7 @@
           </div>
 
           <!-- Showcase Visual: Lectura de Compras & Diagnóstico de Negocio -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; margin-bottom: 56px;">
+          <div class="showcase-grid-2col">
             <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid var(--border-card);">
               <img src="./images/showcase-compras-ia.svg" alt="Lectura Automática de Facturas de Compra con IA CentralApp" style="width: 100%; height: auto; display: block;" />
             </div>
@@ -612,7 +612,10 @@
               <button type="button" class="billing-opt-btn" data-cycle="monthly">Mensual</button>
               <button type="button" class="billing-opt-btn active" data-cycle="annual">Anual (20% OFF)</button>
             </div>
-            <span class="discount-badge">Ahorras 2 meses pagando anual</span>
+            <span class="discount-badge">
+              <span class="material-symbols-rounded mat-fill" style="font-size: 0.95rem;">redeem</span>
+              <span>Ahorras 2 meses pagando anual</span>
+            </span>
           </div>
 
           <!-- 4 Pricing Grid Cards matching the app -->
@@ -1039,7 +1042,7 @@
           <div>
             © <span id="footer-year">2026</span> CentralApp Inc. Todos los derechos reservados.
           </div>
-          <div style="display: flex; gap: 24px;">
+          <div class="footer-bottom-links">
             <a href="#" style="color: var(--text-muted); font-size: 0.85rem;">Términos del Servicio</a>
             <a href="#" style="color: var(--text-muted); font-size: 0.85rem;">Política de Privacidad</a>
             <a href="#" style="color: var(--text-muted); font-size: 0.85rem;">SUNAT Compliance</a>

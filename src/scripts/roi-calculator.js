@@ -16,7 +16,18 @@ export function initROICalculator() {
 
   if (!salesSlider || !recipesSlider) return;
 
+  function updateSliderFill(slider) {
+    const min = parseFloat(slider.min) || 0;
+    const max = parseFloat(slider.max) || 100;
+    const val = parseFloat(slider.value) || min;
+    const pct = ((val - min) / (max - min)) * 100;
+    slider.style.setProperty('--slider-fill', `${pct}%`);
+  }
+
   function calculate() {
+    updateSliderFill(salesSlider);
+    updateSliderFill(recipesSlider);
+
     const monthlySales = parseFloat(salesSlider.value) || 25000;
     const activeRecipes = parseInt(recipesSlider.value) || 30;
 

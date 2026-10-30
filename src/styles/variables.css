@@ -77,6 +77,10 @@
   --grid-pattern: radial-gradient(rgba(246, 197, 95, 0.12) 1px, transparent 1px);
   --grid-size: 32px 32px;
 
+  /* Slider Track */
+  --slider-track-bg: rgba(246, 197, 95, 0.18);
+  --slider-track-border: rgba(246, 197, 95, 0.35);
+
   /* Status */
   --success: #4ADE80;
   --success-bg: rgba(74, 222, 128, 0.12);
@@ -132,6 +136,10 @@
   /* High-Tech Grid & Dot overlay */
   --grid-pattern: radial-gradient(rgba(212, 152, 42, 0.1) 1px, transparent 1px);
   --grid-size: 32px 32px;
+
+  /* Slider Track */
+  --slider-track-bg: rgba(212, 152, 42, 0.18);
+  --slider-track-border: rgba(212, 152, 42, 0.4);
 
   /* Status */
   --success: #15803D;
