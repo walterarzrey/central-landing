@@ -95,8 +95,8 @@
     ]
   }
   </script>
-  <script type="module" crossorigin src="./assets/index-prsHfQ5f.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-C4pdYFb6.css">
+  <script type="module" crossorigin src="./assets/index-B2Lii3Pz.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BWTYPkgp.css">
 </head>
 
 <body>
@@ -1084,13 +1084,138 @@
         </div>
 
         <div class="form-group">
-          <label for="lead-plan-select" class="form-label">Plan de Interés</label>
-          <select id="lead-plan-select" class="form-select">
-            <option value="Plan Estándar">Plan Estándar (Recomendado - Facturación SUNAT, Compras con IA, Caja)</option>
-            <option value="Plan Básico">Plan Básico (S/ 49/mes - POS, Caja y Productos)</option>
-            <option value="Plan Pro Completo">Plan Pro Completo (S/ 149/mes - Producción, Recetas Dinámicas, Mermas, Asistencia, IA)</option>
-            <option value="Plan Personalizado">Plan Personalizado (A Medida)</option>
-          </select>
+          <label id="plan-select-label" class="form-label">Plan de Interés</label>
+          <input type="hidden" id="lead-plan-select" name="plan" value="Plan Estándar" />
+          
+          <div class="custom-select" id="custom-plan-select">
+            <button
+              type="button"
+              class="custom-select-trigger"
+              id="plan-select-trigger"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-labelledby="plan-select-label"
+            >
+              <div class="custom-select-icon">
+                <span class="material-symbols-rounded mat-fill" id="selected-plan-icon">verified</span>
+              </div>
+              <div class="custom-select-content">
+                <div class="custom-select-header">
+                  <span class="custom-select-title" id="selected-plan-title">Plan Estándar</span>
+                  <span class="custom-select-badge badge-featured" id="selected-plan-badge">⭐ Recomendado</span>
+                </div>
+                <span class="custom-select-desc" id="selected-plan-desc">Facturación SUNAT, Compras con IA y Caja</span>
+              </div>
+              <span class="material-symbols-rounded custom-select-arrow" aria-hidden="true">expand_more</span>
+            </button>
+
+            <div
+              class="custom-select-dropdown"
+              id="plan-select-dropdown"
+              role="listbox"
+              aria-labelledby="plan-select-label"
+            >
+              <!-- Option 1: Plan Estándar -->
+              <button
+                type="button"
+                class="custom-select-option selected"
+                role="option"
+                aria-selected="true"
+                data-value="Plan Estándar"
+                data-icon="verified"
+                data-badge="⭐ Recomendado"
+                data-badge-type="featured"
+                data-desc="Facturación SUNAT, Compras con IA y Caja"
+              >
+                <div class="custom-select-opt-icon">
+                  <span class="material-symbols-rounded mat-fill">verified</span>
+                </div>
+                <div class="custom-select-opt-body">
+                  <div class="custom-select-opt-top">
+                    <span class="custom-select-opt-title">Plan Estándar</span>
+                    <span class="custom-select-badge badge-featured">⭐ Recomendado</span>
+                  </div>
+                  <span class="custom-select-opt-desc">Facturación SUNAT, Compras con IA y Caja</span>
+                </div>
+                <span class="material-symbols-rounded mat-fill custom-select-opt-check" aria-hidden="true">check_circle</span>
+              </button>
+
+              <!-- Option 2: Plan Básico -->
+              <button
+                type="button"
+                class="custom-select-option"
+                role="option"
+                aria-selected="false"
+                data-value="Plan Básico"
+                data-icon="point_of_sale"
+                data-badge="S/ 49/mes"
+                data-badge-type="neutral"
+                data-desc="POS, Caja Chica y Catálogo de Productos"
+              >
+                <div class="custom-select-opt-icon">
+                  <span class="material-symbols-rounded mat-fill">point_of_sale</span>
+                </div>
+                <div class="custom-select-opt-body">
+                  <div class="custom-select-opt-top">
+                    <span class="custom-select-opt-title">Plan Básico</span>
+                    <span class="custom-select-badge">S/ 49/mes</span>
+                  </div>
+                  <span class="custom-select-opt-desc">POS, Caja Chica y Catálogo de Productos</span>
+                </div>
+                <span class="material-symbols-rounded mat-fill custom-select-opt-check" aria-hidden="true">check_circle</span>
+              </button>
+
+              <!-- Option 3: Plan Pro Completo -->
+              <button
+                type="button"
+                class="custom-select-option"
+                role="option"
+                aria-selected="false"
+                data-value="Plan Pro Completo"
+                data-icon="auto_awesome"
+                data-badge="S/ 149/mes"
+                data-badge-type="neutral"
+                data-desc="Producción, Recetas Dinámicas, Mermas, Asistencia e IA"
+              >
+                <div class="custom-select-opt-icon">
+                  <span class="material-symbols-rounded mat-fill">auto_awesome</span>
+                </div>
+                <div class="custom-select-opt-body">
+                  <div class="custom-select-opt-top">
+                    <span class="custom-select-opt-title">Plan Pro Completo</span>
+                    <span class="custom-select-badge">S/ 149/mes</span>
+                  </div>
+                  <span class="custom-select-opt-desc">Producción, Recetas Dinámicas, Mermas, Asistencia e IA</span>
+                </div>
+                <span class="material-symbols-rounded mat-fill custom-select-opt-check" aria-hidden="true">check_circle</span>
+              </button>
+
+              <!-- Option 4: Plan Personalizado -->
+              <button
+                type="button"
+                class="custom-select-option"
+                role="option"
+                aria-selected="false"
+                data-value="Plan Personalizado"
+                data-icon="tune"
+                data-badge="A Medida"
+                data-badge-type="neutral"
+                data-desc="Módulos a la carta y multi-sucursal"
+              >
+                <div class="custom-select-opt-icon">
+                  <span class="material-symbols-rounded mat-fill">tune</span>
+                </div>
+                <div class="custom-select-opt-body">
+                  <div class="custom-select-opt-top">
+                    <span class="custom-select-opt-title">Plan Personalizado</span>
+                    <span class="custom-select-badge">A Medida</span>
+                  </div>
+                  <span class="custom-select-opt-desc">Módulos a la carta y multi-sucursal</span>
+                </div>
+                <span class="material-symbols-rounded mat-fill custom-select-opt-check" aria-hidden="true">check_circle</span>
+              </button>
+            </div>
+          </div>
         </div>
 
         <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 8px;">
