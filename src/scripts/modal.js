@@ -3,7 +3,7 @@
  * Provides seamless lead capture, modern custom plan selector, and instant WhatsApp direct redirection.
  */
 
-const WHATSAPP_PHONE = '51995585320'; // Can be customized with client's direct business WhatsApp
+const WHATSAPP_PHONE = '51969728919'; // Can be customized with client's direct business WhatsApp
 
 export function initModal() {
   const modal = document.getElementById('demo-modal');
