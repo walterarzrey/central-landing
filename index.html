@@ -57,7 +57,7 @@
         "applicationCategory": "BusinessApplication",
         "offers": {
           "@type": "Offer",
-          "price": "49.00",
+          "price": "69.90",
           "priceCurrency": "PEN"
         },
         "description": "Sistema operativo comercial en la nube con punto de venta, Listas de Precios Dinámicas (local, apps de delivery, mayoristas, clientes), Facturación Electrónica SUNAT, registro de compras por foto con IA y recetas dinámicas."
@@ -76,7 +76,7 @@
             "name": "¿CentralApp emite Facturación Electrónica oficial ante la SUNAT?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. En el Plan Estándar y Plan Pro puedes emitir Boletas y Facturas electrónicas oficiales con envío automático a la SUNAT, generación de PDF con código QR y envío directo al cliente por WhatsApp o correo."
+              "text": "Sí. En el Plan Facturador y Plan BI puedes emitir Boletas y Facturas electrónicas oficiales con envío automático a la SUNAT, generación de PDF con código QR y envío directo al cliente por WhatsApp o correo."
             }
           },
           {
@@ -168,7 +168,7 @@
         <span class="material-symbols-rounded">chevron_right</span>
       </a>
       <a href="#planes" class="mobile-nav-link">
-        <span>Planes &amp; Precios (Desde S/ 49)</span>
+        <span>Planes &amp; Precios (Desde S/ 69.90)</span>
         <span class="material-symbols-rounded">chevron_right</span>
       </a>
       <a href="#calculadora" class="mobile-nav-link">
@@ -217,7 +217,7 @@
               </button>
               <a href="#planes" class="btn btn-secondary btn-lg">
                 <span class="material-symbols-rounded">visibility</span>
-                <span>Ver Planes (Desde S/ 49)</span>
+                <span>Ver Planes (Desde S/ 69.90)</span>
               </a>
             </div>
 
@@ -605,191 +605,250 @@
               Planes claros y accesibles, <span class="text-gradient">sin costos de instalación</span>
             </h2>
             <p>
-              Elige el plan ideal para tu negocio. Puedes cambiar o personalizar tus módulos cuando tu empresa lo requiera.
+              Elige el plan ideal para tu negocio. Escala tus módulos o personaliza tu cuenta cuando tu empresa lo requiera.
             </p>
           </div>
 
-          <!-- Billing Frequency Toggle (Monthly vs Annual with 20% discount badge) -->
-          <div class="pricing-toggle-container">
-            <div class="toggle-switch-wrapper">
-              <button type="button" class="billing-opt-btn" data-cycle="monthly">Mensual</button>
-              <button type="button" class="billing-opt-btn active" data-cycle="annual">Anual (20% OFF)</button>
-            </div>
-            <span class="discount-badge">
-              <span class="material-symbols-rounded mat-fill" style="font-size: 0.95rem;">redeem</span>
-              <span>Ahorras 2 meses pagando anual</span>
-            </span>
-          </div>
-
-          <!-- 4 Pricing Grid Cards matching the app -->
+          <!-- 4 Pricing Grid Cards matching the new pricing structure -->
           <div class="pricing-grid">
-            <!-- Plan 1: Plan Básico -->
+            <!-- Plan 1: Plan POS -->
             <div class="pricing-card">
-              <h3 class="pricing-tier-name">Plan Básico</h3>
-              <p class="pricing-tier-desc">Ventas rápidas, Caja y Productos. Sin producción ni SUNAT. Para locales comerciales que inician.</p>
+              <h3 class="pricing-tier-name">Plan POS</h3>
+              <p class="pricing-tier-desc">Compras, ventas, flujo de caja, control de mermas, producción e insumos y panel principal.</p>
               
               <div class="pricing-price-box">
                 <span class="price-currency">S/</span>
-                <span class="price-number" id="price-basico">39</span>
-                <span class="price-period">/mes (pago anual)</span>
+                <span class="price-number" id="price-pos">69<span class="price-decimal">.90</span></span>
+                <span class="price-period">/mes</span>
               </div>
 
               <ul class="pricing-features-list">
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Ventas / POS</strong> &amp; Listas de Precios</span>
+                  <span><strong>Ventas / POS</strong> y Listas de Precios</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Caja Chica</strong> (Apertura y cierre)</span>
+                  <span><strong>Compras</strong> y gestión de proveedores</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Productos &amp; Packs</strong> (Catálogo)</span>
+                  <span><strong>Flujo de Caja</strong> y arqueo ciego</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span>Tickets Térmicos 58mm / 80mm</span>
+                  <span><strong>Control de mermas</strong> y bajas de stock</span>
                 </li>
-                <li class="feature-check-item" style="opacity: 0.5;">
-                  <span class="material-symbols-rounded" style="color: var(--text-muted); font-size: 1.15rem;">cancel</span>
-                  <span>Sin Facturación SUNAT</span>
+                <li class="feature-check-item">
+                  <span class="material-symbols-rounded check-icon">check_circle</span>
+                  <span><strong>Producción e insumos</strong> (Recetas)</span>
                 </li>
-                <li class="feature-check-item" style="opacity: 0.5;">
-                  <span class="material-symbols-rounded" style="color: var(--text-muted); font-size: 1.15rem;">cancel</span>
-                  <span>Sin módulo de producción</span>
+                <li class="feature-check-item">
+                  <span class="material-symbols-rounded check-icon">check_circle</span>
+                  <span><strong>Panel principal</strong> y catálogo de productos</span>
                 </li>
               </ul>
 
-              <button type="button" class="btn btn-secondary btn-lg" data-plan-select="Plan Básico">
-                <span>Elegir Plan Básico</span>
+              <button type="button" class="btn btn-secondary btn-lg" data-plan-select="Plan POS">
+                <span>Elegir Plan POS</span>
               </button>
             </div>
 
-            <!-- Plan 2: Plan Estándar (RECOMENDADO) -->
+            <!-- Plan 2: Plan Facturador (RECOMENDADO) -->
             <div class="pricing-card featured">
-              <div class="featured-ribbon">⭐ RECOMENDADO POR SUNAT</div>
-              <h3 class="pricing-tier-name">Plan Estándar</h3>
-              <p class="pricing-tier-desc">Facturación electrónica SUNAT, Compras con IA, Caja y Analíticas. El más elegido por comercios.</p>
+              <div class="featured-ribbon">⭐ MÁS ELEGIDO · SUNAT</div>
+              <h3 class="pricing-tier-name">Plan Facturador</h3>
+              <p class="pricing-tier-desc">Todo lo del POS, facturación electrónica SUNAT hasta 500 CPE al mes y control de asistencia.</p>
               
               <div class="pricing-price-box">
                 <span class="price-currency">S/</span>
-                <span class="price-number" id="price-estandar">71</span>
-                <span class="price-period">/mes (pago anual)</span>
+                <span class="price-number" id="price-facturador">119<span class="price-decimal">.90</span></span>
+                <span class="price-period">/mes</span>
               </div>
 
               <ul class="pricing-features-list">
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Todo lo del Plan Básico</strong></span>
+                  <span><strong>Todo lo del Plan POS</strong></span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon mat-fill" style="color: var(--primary);">verified</span>
-                  <span><strong>Facturación Electrónica SUNAT Oficial</strong></span>
+                  <span>Facturar hasta <strong>500 CPE al mes</strong> (SUNAT)</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
                   <span>Boletas, Facturas y Notas de Crédito</span>
                 </li>
                 <li class="feature-check-item">
-                  <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Módulo de Compras y Proveedores</strong></span>
-                </li>
-                <li class="feature-check-item">
-                  <span class="material-symbols-rounded check-icon mat-fill" style="color: var(--primary);">photo_camera</span>
-                  <span><strong>Registro de Compras por Foto (IA)</strong></span>
+                  <span class="material-symbols-rounded check-icon mat-fill" style="color: var(--primary);">fingerprint</span>
+                  <span><strong>Control de asistencia</strong> y turnos</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Analíticas</strong> (Reportes de ganancias)</span>
+                  <span>Envío de comprobantes QR por WhatsApp</span>
+                </li>
+                <li class="feature-check-item">
+                  <span class="material-symbols-rounded check-icon">check_circle</span>
+                  <span>Reportes mensuales para tu contador</span>
                 </li>
               </ul>
 
-              <button type="button" class="btn btn-primary btn-lg" data-plan-select="Plan Estándar">
-                <span>Probar Plan Estándar</span>
+              <button type="button" class="btn btn-primary btn-lg" data-plan-select="Plan Facturador">
+                <span>Probar Plan Facturador</span>
                 <span class="material-symbols-rounded">arrow_forward</span>
               </button>
             </div>
 
-            <!-- Plan 3: Plan Pro Completo -->
+            <!-- Plan 3: Plan BI (Business Intelligence - Todo Incluido) -->
             <div class="pricing-card">
-              <h3 class="pricing-tier-name">Plan Pro Completo</h3>
-              <p class="pricing-tier-desc">Todos los módulos: Cocina/Producción, Insumos, Recetas Dinámicas, Mermas, Asistencia y Asesor IA.</p>
+              <div class="tier-badge-inline">TODO INCLUIDO</div>
+              <h3 class="pricing-tier-name">Plan BI</h3>
+              <p class="pricing-tier-desc">Business Intelligence: Todo lo del Facturador, hasta 2,000 CPE al mes, analíticas, módulos de IA y gamificación.</p>
               
               <div class="pricing-price-box">
                 <span class="price-currency">S/</span>
-                <span class="price-number" id="price-pro">119</span>
-                <span class="price-period">/mes (pago anual)</span>
+                <span class="price-number" id="price-bi">199<span class="price-decimal">.90</span></span>
+                <span class="price-period">/mes</span>
               </div>
 
               <ul class="pricing-features-list">
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Todo lo del Plan Estándar</strong></span>
+                  <span><strong>Todo lo del Facturador (Todo incluido)</strong></span>
                 </li>
                 <li class="feature-check-item">
-                  <span class="material-symbols-rounded check-icon mat-fill" style="color: var(--primary);">psychology</span>
-                  <span><strong>Auditoría &amp; Consejos Semanales (IA)</strong></span>
+                  <span class="material-symbols-rounded check-icon mat-fill" style="color: var(--primary);">receipt_long</span>
+                  <span>Facturar hasta <strong>2,000 CPE al mes</strong></span>
+                </li>
+                <li class="feature-check-item">
+                  <span class="material-symbols-rounded check-icon mat-fill" style="color: var(--primary);">analytics</span>
+                  <span><strong>Analíticas avanzadas</strong> (Business Intelligence)</span>
+                </li>
+                <li class="feature-check-item">
+                  <span class="material-symbols-rounded check-icon mat-fill" style="color: var(--primary);">auto_awesome</span>
+                  <span><strong>Módulos de IA</strong> (Compras por foto y Asesor IA)</span>
+                </li>
+                <li class="feature-check-item">
+                  <span class="material-symbols-rounded check-icon mat-fill" style="color: var(--primary);">emoji_events</span>
+                  <span><strong>Gamificación</strong> y metas de rendimiento</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Recetas Dinámicas y Márgenes</strong></span>
-                </li>
-                <li class="feature-check-item">
-                  <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Producción / Cocina</strong> (Control lotes)</span>
-                </li>
-                <li class="feature-check-item">
-                  <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Control de Mermas</strong> y bajas de stock</span>
-                </li>
-                <li class="feature-check-item">
-                  <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span><strong>Asistencia / RRHH</strong> (Turnos y personal)</span>
+                  <span>Auditoría inteligente de costos y márgenes</span>
                 </li>
               </ul>
 
-              <button type="button" class="btn btn-secondary btn-lg" data-plan-select="Plan Pro Completo">
-                <span>Elegir Plan Pro</span>
+              <button type="button" class="btn btn-secondary btn-lg" data-plan-select="Plan BI">
+                <span>Elegir Plan BI</span>
               </button>
             </div>
 
-            <!-- Plan 4: Plan Personalizado -->
+            <!-- Plan 4: Personalizado / Agendar Llamada -->
             <div class="pricing-card" style="border-style: dashed;">
-              <h3 class="pricing-tier-name">Plan Personalizado</h3>
-              <p class="pricing-tier-desc">Selecciona exactamente los módulos que tendrá permitidos tu empresa. A tu propio ritmo.</p>
+              <h3 class="pricing-tier-name">¿Quieres Personalizar?</h3>
+              <p class="pricing-tier-desc">¿Tienes varios locales, cadenas o necesitas una configuración especial? Agenda una llamada con nosotros.</p>
               
               <div class="pricing-price-box">
-                <span class="price-currency" style="font-size: 1.1rem;">Tarifa</span>
-                <span class="price-number" style="font-size: 2.2rem;">A medida</span>
+                <span class="price-currency" style="font-size: 1.05rem;">Plan</span>
+                <span class="price-number" style="font-size: 2rem;">A medida</span>
               </div>
 
               <ul class="pricing-features-list">
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span>Módulos 100% a la carta</span>
+                  <span><strong>Múltiples establecimientos</strong> o cadenas</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span>Multi-Sucursales &amp; Multi-Almacén</span>
+                  <span><strong>Recepciones y entregas</strong> entre locales</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span>Usuarios y roles ilimitados</span>
+                  <span>Volumen de <strong>CPE a medida</strong> por local</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span>Capacitación y onboarding dedicado</span>
+                  <span>Módulos e integraciones a tu medida</span>
                 </li>
                 <li class="feature-check-item">
                   <span class="material-symbols-rounded check-icon">check_circle</span>
-                  <span>Integraciones personalizadas</span>
+                  <span>Asesoría, capacitación y soporte dedicado</span>
                 </li>
               </ul>
 
-              <button type="button" class="btn btn-secondary btn-lg" data-plan-select="Plan Personalizado">
-                <span>Cotizar A Medida</span>
+              <button type="button" class="btn btn-secondary btn-lg" data-plan-select="Personalizar / Agendar Llamada">
+                <span class="material-symbols-rounded">call</span>
+                <span>Agendar una Llamada</span>
               </button>
+            </div>
+          </div>
+
+          <!-- Extras / Complementos Adicionales -->
+          <div class="pricing-extras-wrapper">
+            <div class="pricing-extras-header">
+              <div class="pricing-extras-title-group">
+                <span class="material-symbols-rounded" style="color: var(--primary);">add_circle</span>
+                <h3>Extras y Complementos Opcionales</h3>
+              </div>
+              <p>Potencia cualquier plan agregando capacidad o integraciones según lo necesites:</p>
+            </div>
+
+            <div class="pricing-extras-grid">
+              <div class="extra-addon-card">
+                <div class="extra-addon-icon">
+                  <span class="material-symbols-rounded">receipt_long</span>
+                </div>
+                <div class="extra-addon-info">
+                  <span class="extra-addon-name">+500 CPE</span>
+                  <span class="extra-addon-desc">Comprobantes electrónicos adicionales al mes</span>
+                </div>
+                <div class="extra-addon-price">
+                  <span class="extra-price-amount">S/ 49.90</span>
+                  <span class="extra-price-period">/mes</span>
+                </div>
+              </div>
+
+              <div class="extra-addon-card">
+                <div class="extra-addon-icon">
+                  <span class="material-symbols-rounded">store</span>
+                </div>
+                <div class="extra-addon-info">
+                  <span class="extra-addon-name">+1 Sede</span>
+                  <span class="extra-addon-desc">Establecimiento o sucursal adicional</span>
+                </div>
+                <div class="extra-addon-price">
+                  <span class="extra-price-amount">S/ 49.90</span>
+                  <span class="extra-price-period">/mes</span>
+                </div>
+              </div>
+
+              <div class="extra-addon-card">
+                <div class="extra-addon-icon">
+                  <span class="material-symbols-rounded">delivery_dining</span>
+                </div>
+                <div class="extra-addon-info">
+                  <span class="extra-addon-name">Integración Llamafood</span>
+                  <span class="extra-addon-desc">Sincronización directa de pedidos delivery</span>
+                </div>
+                <div class="extra-addon-price">
+                  <span class="extra-price-amount">S/ 49.90</span>
+                  <span class="extra-price-period">/mes</span>
+                </div>
+              </div>
+
+              <div class="extra-addon-card">
+                <div class="extra-addon-icon">
+                  <span class="material-symbols-rounded">music_note</span>
+                </div>
+                <div class="extra-addon-info">
+                  <span class="extra-addon-name">Integración Spotify</span>
+                  <span class="extra-addon-desc">Control de música ambiental en tu local</span>
+                </div>
+                <div class="extra-addon-price">
+                  <span class="extra-price-amount">S/ 34.90</span>
+                  <span class="extra-price-period">/mes</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -946,7 +1005,7 @@
       <section class="section" style="padding-top: 20px;">
         <div class="container">
           <div class="glass-card" style="text-align: center; padding: clamp(40px, 6vw, 72px) 24px; border-color: var(--primary); background: radial-gradient(circle at 50% 50%, rgba(246, 197, 95, 0.15) 0%, var(--bg-card) 75%);">
-            <span class="badge-pill" style="margin-bottom: 20px;">PLANES DESDE S/ 49 / MES</span>
+            <span class="badge-pill" style="margin-bottom: 20px;">PLANES DESDE S/ 69.90 / MES</span>
             <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px;">
               Ordena y haz crecer tu negocio <span class="text-gradient">hoy mismo</span>
             </h2>
@@ -1012,7 +1071,7 @@
             <h4>Plataforma</h4>
             <ul class="footer-links">
               <li><a href="#ia-advisor">Asesor con IA</a></li>
-              <li><a href="#planes">Planes desde S/ 49</a></li>
+              <li><a href="#planes">Planes desde S/ 69.90</a></li>
               <li><a href="#calculadora">Calculadora de Ahorro</a></li>
               <li><a href="#faq">Preguntas Frecuentes</a></li>
             </ul>
@@ -1088,7 +1147,7 @@
 
         <div class="form-group">
           <label id="plan-select-label" class="form-label">Plan de Interés</label>
-          <input type="hidden" id="lead-plan-select" name="plan" value="Plan Estándar" />
+          <input type="hidden" id="lead-plan-select" name="plan" value="Plan Facturador" />
           
           <div class="custom-select" id="custom-plan-select">
             <button
@@ -1104,10 +1163,10 @@
               </div>
               <div class="custom-select-content">
                 <div class="custom-select-header">
-                  <span class="custom-select-title" id="selected-plan-title">Plan Estándar</span>
-                  <span class="custom-select-badge badge-featured" id="selected-plan-badge">⭐ Recomendado</span>
+                  <span class="custom-select-title" id="selected-plan-title">Plan Facturador</span>
+                  <span class="custom-select-badge badge-featured" id="selected-plan-badge">S/ 119.90/mes · ⭐ Recomendado</span>
                 </div>
-                <span class="custom-select-desc" id="selected-plan-desc">Facturación SUNAT, Compras con IA y Caja</span>
+                <span class="custom-select-desc" id="selected-plan-desc">Todo lo del POS, hasta 500 CPE al mes y control de asistencia</span>
               </div>
               <span class="material-symbols-rounded custom-select-arrow" aria-hidden="true">expand_more</span>
             </button>
@@ -1118,102 +1177,102 @@
               role="listbox"
               aria-labelledby="plan-select-label"
             >
-              <!-- Option 1: Plan Estándar -->
+              <!-- Option 1: Plan Facturador -->
               <button
                 type="button"
                 class="custom-select-option selected"
                 role="option"
                 aria-selected="true"
-                data-value="Plan Estándar"
+                data-value="Plan Facturador"
                 data-icon="verified"
-                data-badge="⭐ Recomendado"
+                data-badge="S/ 119.90/mes · ⭐ Recomendado"
                 data-badge-type="featured"
-                data-desc="Facturación SUNAT, Compras con IA y Caja"
+                data-desc="Todo lo del POS, hasta 500 CPE al mes y control de asistencia"
               >
                 <div class="custom-select-opt-icon">
                   <span class="material-symbols-rounded mat-fill">verified</span>
                 </div>
                 <div class="custom-select-opt-body">
                   <div class="custom-select-opt-top">
-                    <span class="custom-select-opt-title">Plan Estándar</span>
-                    <span class="custom-select-badge badge-featured">⭐ Recomendado</span>
+                    <span class="custom-select-opt-title">Plan Facturador</span>
+                    <span class="custom-select-badge badge-featured">S/ 119.90/mes · ⭐ Recomendado</span>
                   </div>
-                  <span class="custom-select-opt-desc">Facturación SUNAT, Compras con IA y Caja</span>
+                  <span class="custom-select-opt-desc">Todo lo del POS, hasta 500 CPE al mes y control de asistencia</span>
                 </div>
                 <span class="material-symbols-rounded mat-fill custom-select-opt-check" aria-hidden="true">check_circle</span>
               </button>
 
-              <!-- Option 2: Plan Básico -->
+              <!-- Option 2: Plan POS -->
               <button
                 type="button"
                 class="custom-select-option"
                 role="option"
                 aria-selected="false"
-                data-value="Plan Básico"
+                data-value="Plan POS"
                 data-icon="point_of_sale"
-                data-badge="S/ 49/mes"
+                data-badge="S/ 69.90/mes"
                 data-badge-type="neutral"
-                data-desc="POS, Caja Chica y Catálogo de Productos"
+                data-desc="Compras, ventas, flujo de caja, mermas, producción e insumos"
               >
                 <div class="custom-select-opt-icon">
                   <span class="material-symbols-rounded mat-fill">point_of_sale</span>
                 </div>
                 <div class="custom-select-opt-body">
                   <div class="custom-select-opt-top">
-                    <span class="custom-select-opt-title">Plan Básico</span>
-                    <span class="custom-select-badge">S/ 49/mes</span>
+                    <span class="custom-select-opt-title">Plan POS</span>
+                    <span class="custom-select-badge">S/ 69.90/mes</span>
                   </div>
-                  <span class="custom-select-opt-desc">POS, Caja Chica y Catálogo de Productos</span>
+                  <span class="custom-select-opt-desc">Compras, ventas, flujo de caja, mermas, producción e insumos</span>
                 </div>
                 <span class="material-symbols-rounded mat-fill custom-select-opt-check" aria-hidden="true">check_circle</span>
               </button>
 
-              <!-- Option 3: Plan Pro Completo -->
+              <!-- Option 3: Plan BI -->
               <button
                 type="button"
                 class="custom-select-option"
                 role="option"
                 aria-selected="false"
-                data-value="Plan Pro Completo"
+                data-value="Plan BI"
                 data-icon="auto_awesome"
-                data-badge="S/ 149/mes"
+                data-badge="S/ 199.90/mes · Todo Incluido"
                 data-badge-type="neutral"
-                data-desc="Producción, Recetas Dinámicas, Mermas, Asistencia e IA"
+                data-desc="Todo lo del Facturador, 2,000 CPE, analíticas, IA y gamificación"
               >
                 <div class="custom-select-opt-icon">
                   <span class="material-symbols-rounded mat-fill">auto_awesome</span>
                 </div>
                 <div class="custom-select-opt-body">
                   <div class="custom-select-opt-top">
-                    <span class="custom-select-opt-title">Plan Pro Completo</span>
-                    <span class="custom-select-badge">S/ 149/mes</span>
+                    <span class="custom-select-opt-title">Plan BI (Business Intelligence)</span>
+                    <span class="custom-select-badge">S/ 199.90/mes · Todo Incluido</span>
                   </div>
-                  <span class="custom-select-opt-desc">Producción, Recetas Dinámicas, Mermas, Asistencia e IA</span>
+                  <span class="custom-select-opt-desc">Todo lo del Facturador, 2,000 CPE, analíticas, IA y gamificación</span>
                 </div>
                 <span class="material-symbols-rounded mat-fill custom-select-opt-check" aria-hidden="true">check_circle</span>
               </button>
 
-              <!-- Option 4: Plan Personalizado -->
+              <!-- Option 4: Personalizar / Agendar Llamada -->
               <button
                 type="button"
                 class="custom-select-option"
                 role="option"
                 aria-selected="false"
-                data-value="Plan Personalizado"
-                data-icon="tune"
+                data-value="Personalizar / Agendar Llamada"
+                data-icon="call"
                 data-badge="A Medida"
                 data-badge-type="neutral"
-                data-desc="Módulos a la carta y multi-sucursal"
+                data-desc="Agendar llamada para personalizar plan o múltiples establecimientos"
               >
                 <div class="custom-select-opt-icon">
-                  <span class="material-symbols-rounded mat-fill">tune</span>
+                  <span class="material-symbols-rounded mat-fill">call</span>
                 </div>
                 <div class="custom-select-opt-body">
                   <div class="custom-select-opt-top">
-                    <span class="custom-select-opt-title">Plan Personalizado</span>
+                    <span class="custom-select-opt-title">Personalizar / Agendar Llamada</span>
                     <span class="custom-select-badge">A Medida</span>
                   </div>
-                  <span class="custom-select-opt-desc">Módulos a la carta y multi-sucursal</span>
+                  <span class="custom-select-opt-desc">Agendar llamada para personalizar plan o múltiples establecimientos</span>
                 </div>
                 <span class="material-symbols-rounded mat-fill custom-select-opt-check" aria-hidden="true">check_circle</span>
               </button>

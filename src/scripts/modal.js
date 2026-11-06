@@ -161,10 +161,13 @@ export function initModal() {
       const name = document.getElementById('lead-name')?.value.trim();
       const phone = document.getElementById('lead-phone')?.value.trim();
       const business = document.getElementById('lead-business')?.value.trim();
-      const plan = planSelect?.value || 'Plan Estándar';
+      const plan = planSelect?.value || 'Plan Facturador';
 
       // Build personalized WhatsApp text
-      const message = `Hola CentralApp, soy ${name} de *${business}*. Me interesa comenzar la prueba gratuita del *${plan}* y agendar una cita con un asesor para empezar a usar CentralApp. Mi teléfono de contacto es ${phone}.`;
+      const isCustomCall = plan.includes('Personalizar') || plan.includes('Llamada');
+      const message = isCustomCall
+        ? `Hola CentralApp, soy ${name} de *${business}*. Quisiera *agendar una llamada* para personalizar un plan a la medida de mi negocio. Mi teléfono de contacto es ${phone}.`
+        : `Hola CentralApp, soy ${name} de *${business}*. Me interesa comenzar la prueba gratuita del *${plan}* y agendar una cita con un asesor para empezar a usar CentralApp. Mi teléfono de contacto es ${phone}.`;
 
       const waUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
 
@@ -189,7 +192,7 @@ export function initModal() {
           submitBtn.disabled = false;
         }
         form.reset();
-        setPlanValue('Plan Estándar');
+        setPlanValue('Plan Facturador');
       }, 800);
     });
   }
